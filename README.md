@@ -1,8 +1,7 @@
 # delta_debugging: grade SRE diagnoses by experiment
 
-An LLM judge grades a diagnosis by reading it. This tool grades it by acting on it: it takes the
-cause a diagnosis blames, undoes exactly that on a fresh copy of the broken app, and asks the
-problem's own SREGym mitigation oracle whether the app is fixed. If undoing the blamed cause fixes
+delta debugging based evaluation takes the cause a diagnosis blames, undoes exactly that on a fresh copy of the broken app, and asks the
+ SREGym mitigation oracle whether the app is fixed. If undoing the blamed cause fixes
 the app, the diagnosis holds up. If it does not, the diagnosis is wrong, however well it reads.
 
 The report puts the judge's score next to the experiment's verdict for every diagnosis, so the
