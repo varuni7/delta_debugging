@@ -131,5 +131,4 @@ Two warnings worth knowing:
 
 ## Tests
 
-From this repo, with SREGym's environment: `<SREGym>/.venv/bin/python -m pytest tests` (no cluster or
-API key needed).
+From this repo, with SREGym's environment: `<SREGym>/.venv/bin/python -m pytest tests`
